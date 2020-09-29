@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AgentAdminListComponent } from "./agent-admin-list.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WavesModule, TableModule, IconsModule, ModalModule, InputsModule } from 'angular-bootstrap-md';
+import { DpDatePickerModule } from 'ng2-date-picker';
 
 const routes: Routes = [
   {
@@ -25,11 +26,12 @@ const routes: Routes = [
     TableModule,
     IconsModule,
     ModalModule,
-    InputsModule
+    InputsModule,
+    DpDatePickerModule
   ]
 })
 export class AgentAdminListModule {
   static components = [
     AgentAdminListComponent
   ]
- }
+}

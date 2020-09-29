@@ -1,9 +1,6 @@
 .modal-header .close {
     margin-top: -30px;
 }
-.w-360 {
-    width: 360px;
-}
 .m-t-20 {
     margin-top: 20px;
 }
@@ -17,7 +14,7 @@
 .modal-footer {
     padding: 15px;
     text-align: right;
- border-top: 0;
+    border-top: 0;
 }
 label {
     font-weight: 100;

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AddAgentProfileComponent } from "./pages/admin/add-agent-profile/add-agent-profile.component";
+import { DpDatePickerModule } from 'ng2-date-picker';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddAgentProfileComponent } from "./pages/admin/add-agent-profile/add-ag
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    DpDatePickerModule
   ],
   providers: [],
   entryComponents: [ AddAgentProfileComponent ],
