@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { AgentAdminListComponent } from "./agent-admin-list.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { WavesModule, TableModule, IconsModule } from 'angular-bootstrap-md';
+import { WavesModule, TableModule, IconsModule, ModalModule, InputsModule } from 'angular-bootstrap-md';
 
 const routes: Routes = [
   {
@@ -23,7 +23,9 @@ const routes: Routes = [
     ReactiveFormsModule,
     WavesModule,
     TableModule,
-    IconsModule
+    IconsModule,
+    ModalModule,
+    InputsModule
   ]
 })
 export class AgentAdminListModule {

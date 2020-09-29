@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AddAgentProfileComponent } from '../add-agent-profile/add-agent-profile.component';
+import { MDBModalRef, MDBModalService } from 'angular-bootstrap-md';
 
 @Component({
   selector: 'app-agent-admin-list',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgentAdminListComponent implements OnInit {
 
-  constructor() { }
+  modalRef: MDBModalRef;
+
+  constructor(private modalService: MDBModalService) { }
 
   elements: any = [];
   headElements = ['Action', 'Employee ID', 'First Name', 'Last Name', 'Hire Date', 'Agent Categories', 'Created By'];
@@ -18,4 +22,7 @@ export class AgentAdminListComponent implements OnInit {
     }
   }
 
+  openModal() {
+    this.modalRef = this.modalService.show(AddAgentProfileComponent)
+  }
 }
