@@ -7,7 +7,7 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
-      path: 'agent-admin',
+      path: 'AgentAdminList',
       loadChildren: () => import('./admin/agent-admin-list/agent-admin-list.module')
         .then(m => m.AgentAdminListModule)
     },

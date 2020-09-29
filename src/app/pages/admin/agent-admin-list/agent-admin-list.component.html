@@ -1,1 +1,53 @@
-<p>agent-admin-list works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 col-md-6">
+            <div>
+                <h6>Agent Admin List</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-lg-9 col-md-12">
+            <div>
+                <div>
+                    <div class="col-md-6">
+                        <select class="form-control"></select> 
+                        <button class="form-control">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn l-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mt-2">
+            <table id="tableSortExample" mdbTable class="z-depth-1">
+                <thead>
+                    <tr>
+                        <th *ngFor="let head of headElements; let i = index" aria-controls="tableSortExample"
+                            scope="col" [mdbTableSort]="elements" [sortBy]="headElements[i]">{{head}}
+                            <mdb-icon fas icon="sort"></mdb-icon>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let el of elements; let i = index">
+                        <th scope="row">{{el.id}}</th>
+                        <td>{{el.first}}</td>
+                        <td>{{el.last}}</td>
+                        <td>{{el.handle}}</td>
+                        <td>{{el.last}}</td>
+                        <td>{{el.handle}}</td>
+                        <td>{{el.handle}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
